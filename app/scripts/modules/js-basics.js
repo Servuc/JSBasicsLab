@@ -42,7 +42,8 @@
         return myReturn == str;
     };
 
-    JS_BASICS.nestedSum = function(arr) {
+    JS_BASICS.nestedSum = function(arr)
+    {
         var myTotal = 0;
         for(var cpt = 0; cpt < arr.length; cpt++)
             if(Array.isArray(arr[cpt]))
