@@ -48,7 +48,7 @@
         for(var cpt = 0; cpt < arr.length; cpt++)
             if(Array.isArray(arr[cpt]))
                 myTotal += JS_BASICS.nestedSum(arr[cpt]);
-            else if(Number.isInteger(arr[cpt]))
+            else if(typeof arr[cpt] === "number")
                 myTotal += arr[cpt];
 
         return myTotal;
